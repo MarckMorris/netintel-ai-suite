@@ -1,7 +1,7 @@
 NetIntel AI Suite - GitHub Information
 ======================================
 
-Repository URL: [1;2Dhttps://github.com/MarckMorris/netintel-ai-suite
+Repository URL: https://github.com/MarckMorris/netintel-ai-suite
 
 Share this link with:
 - Walmart recruiters
