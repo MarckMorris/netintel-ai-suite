@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  anomaly-api:
+    build: ./project1_anomaly_detection/deployment
+    ports:
+      - "8001:8000"
+    environment:
+      - MODEL_PATH=/app/models
+    volumes:
+      - ./project1_anomaly_detection/models:/app/models
+    restart: unless-stopped
+
+  correlation-api:
+    build: ./project2_alert_correlation/deployment
+    ports:
+      - "8002:8000"
+    restart: unless-stopped
+
+  optimizer-api:
+    build: ./project3_sdwan_optimizer/deployment
+    ports:
+      - "8003:8000"
+    restart: unless-stopped
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "8501:8501"
+    depends_on:
+      - anomaly-api
+      - correlation-api
+      - optimizer-api
+    restart: unless-stopped
