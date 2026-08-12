@@ -1,0 +1,4 @@
+-r requirements.txt
+
+# LSTM autoencoder. Large download; only needed to train or run that model.
+tensorflow>=2.17
