@@ -1,6 +1,6 @@
 """
 NetIntel AI Suite - Unified Dashboard
-Real-time monitoring for Walmart Network Operations
+Real-time monitoring for network operations
 """
 
 import streamlit as st
@@ -23,7 +23,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="main-header">🌐 NetIntel AI Suite</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Walmart Network Intelligence Platform</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-header">Network Intelligence Platform</p>', unsafe_allow_html=True)
 
 with st.sidebar:
     st.title("Navigation")
