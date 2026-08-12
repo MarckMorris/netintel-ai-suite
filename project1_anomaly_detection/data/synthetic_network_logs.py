@@ -158,11 +158,6 @@ class NetworkTelemetryGenerator:
         return train_data, test_data
 
 
-#: Kept so older notebooks and scripts that imported the previous name keep
-#: working. New code should use NetworkTelemetryGenerator.
-WalmartNetworkDataGenerator = NetworkTelemetryGenerator
-
-
 if __name__ == "__main__":
     print("Network telemetry generator - NetIntel AI Suite")
     print("=" * 60)
