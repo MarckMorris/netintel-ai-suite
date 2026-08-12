@@ -88,7 +88,7 @@ batch_size=16  # instead of 32
 
 ---
 
-## Production Deployment (Walmart)
+## Production deployment
 
 1. Configure Versa SDWAN credentials in `.env`
 2. Set up NOC webhook endpoints
