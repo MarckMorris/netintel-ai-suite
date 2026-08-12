@@ -1,6 +1,6 @@
 """
 Network Anomaly Detection - LSTM Autoencoder
-For Walmart SDWAN anomaly detection
+Unsupervised anomaly detection on SD-WAN telemetry
 """
 
 import numpy as np
@@ -191,5 +191,5 @@ class NetworkAnomalyDetector:
         print(f"✓ Models loaded from {path}")
 
 if __name__ == "__main__":
-    print("NetIntel Anomaly Detection - Walmart Network Portfolio Demo")
+    print("NetIntel Anomaly Detection - demo")
     print("Ready for integration with NOC alerting systems")
