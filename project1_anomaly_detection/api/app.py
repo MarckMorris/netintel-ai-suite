@@ -1,6 +1,6 @@
 """
 FastAPI endpoint for Network Anomaly Detection
-Real-time inference API for Walmart NOC integration
+Real-time inference API, intended to be consumed by a NOC dashboard or alerting pipeline
 """
 
 from fastapi import FastAPI, HTTPException
