@@ -10,11 +10,7 @@ from __future__ import annotations
 import pandas as pd
 import pytest
 
-from synthetic_network_logs import (
-    REFERENCE_START,
-    NetworkTelemetryGenerator,
-    WalmartNetworkDataGenerator,
-)
+from synthetic_network_logs import REFERENCE_START, NetworkTelemetryGenerator
 
 COLUMNS = {
     "timestamp",
@@ -147,7 +143,3 @@ class TestFaultInjection:
         pd.testing.assert_frame_equal(first, second)
         assert first_locations == second_locations
 
-
-def test_the_old_class_name_still_imports():
-    """Old notebooks referencing the previous name keep working."""
-    assert WalmartNetworkDataGenerator is NetworkTelemetryGenerator
